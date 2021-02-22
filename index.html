@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Huong huong</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    .all{
+        padding-top: 250px;
+       text-align: center;
+    }
+</style>
+<body>
+
+    <div class="all">
+        <input type="text" id="quantity" value="0">
+        <button class="yayeet disabled" type="button">-</button>
+        <button class="bruh" type="button">+</button>
+    </div>
+    <script>
+        document.querySelector(".yayeet").setAttribute("disabled", "disabled");
+
+        var valueCount
+
+       
+        document.querySelector(".bruh").addEventListener("click", function() {
+           
+            valueCount = document.getElementById("quantity").value;
+
+           
+            valueCount++;
+
+           
+            document.getElementById("quantity").value = valueCount;
+
+            if (valueCount > 0) {
+                document.querySelector(".yayeet").removeAttribute("disabled");
+                document.querySelector(".yayeet").classList.remove("disabled")
+            }
+
+        })
+
+       
+        document.querySelector(".yayeet").addEventListener("click", function() {
+            
+            valueCount = document.getElementById("quantity").value;
+
+            
+            valueCount--;
+
+            
+            document.getElementById("quantity").value = valueCount
+
+            if (valueCount == 0) {
+                document.querySelector(".yayeet").setAttribute("disabled", "disabled")
+            }
+
+            
+        })
+    </script>
+</body>
+</html>>
