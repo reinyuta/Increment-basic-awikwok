@@ -1,2 +1,2 @@
-# Increment-basic-awikwok
-basic increment menggunakan javascript
+# INCREMENT BASIC NYA KK
+basic increment menggunakan javascript uwu
